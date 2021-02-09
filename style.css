@@ -20,31 +20,12 @@ a:focus {
   transition: all 0.3s;
 }
 
-.navbar {
-  padding: 15px 10px;
-  background: #fff;
-  border: none;
-  border-radius: 0;
-  margin-bottom: 40px;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-btn {
-  box-shadow: none;
-  outline: none !important;
-  border: none;
-}
-
 .line {
   width: 100%;
   height: 1px;
   border-bottom: 1px dashed #ddd;
   margin: 40px 0;
 }
-
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
 
 .wrapper {
   display: flex;
@@ -158,7 +139,11 @@ a.article:hover {
 #content.active {
   width: 100%;
 }
-
+@media (max-width: 768px) {
+  #content {
+    padding: 0px;
+  }
+}
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
@@ -213,7 +198,8 @@ a.article:hover {
   border: none;
 }
 .profile {
-  width: 65%;
+  width: 150px;
+  height: 150px;
 }
 .card {
   border-radius: 1.25rem;
@@ -256,9 +242,6 @@ a.article:hover {
 .card__face {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-}
-
-.card__face--front {
 }
 
 .card__face--back {
